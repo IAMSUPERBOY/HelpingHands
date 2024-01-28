@@ -6,7 +6,8 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import logo from "../../Assets/logo.svg";
 import data from "../../Assets/state.json";
-import AuthProvider from "../firebaseAuth";
+// import AuthProvider from "../firebaseAuth";
+// import { UserAuth } from "../context/AuthContext";
 
 async function readFormData(formData)
 {
@@ -37,8 +38,8 @@ async function readFormData(formData)
       redirect("/");
 }
 export default function Page() {
+ 
   "use client"
-  
   return (
     <>
 
@@ -55,7 +56,7 @@ export default function Page() {
               <input required
                 type="text"
                 name="UName"
-                placeholder="Type here"
+                placeholder="Enter your name"
                 className="input input-bordered w-full max-w-xs"
               />
               <div className="label"></div>
@@ -97,9 +98,10 @@ export default function Page() {
                 <span className="label-text">Email</span>
               </div>
               <input required
+                
                 type="email"
                 name="mail_id"
-                placeholder="Type here"
+                placeholder="Enter your email"
                 className="input input-bordered w-full max-w-xs"
               />
               <div className="label"></div>
@@ -127,9 +129,9 @@ export default function Page() {
               <input required
                 type="text"
                 name="address"
-                placeholder="Type here"
+                placeholder=""
                 className="input input-bordered w-full max-w-xs"
-              />
+                />
               <div className="label"></div>
             </label>
           </div>

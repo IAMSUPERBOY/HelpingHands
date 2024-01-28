@@ -11,9 +11,9 @@ export default function Page() {
     }
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-row mt-6">
         <div className=" flex flex-col m-5">
-          <h1 className="text-3xl text-center">Book a Home Nurse now</h1>
+          <h1 className="text-3xl text-center mb-8 font-bold">Book a Home Nurse now</h1>
           <h2 className="text-sm font-light">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Yet,
@@ -27,7 +27,7 @@ export default function Page() {
             <div>
 
           <label className="text-right font-bold my-5">Requirements</label>  
-          <textarea name="requirements" className="textarea textarea-bordered" placeholder="Enter here..." ></textarea>
+          <textarea name="requirements" className="textarea textarea-bordered " placeholder="Enter you requirements" ></textarea>
             </div>
             <div>
 
@@ -40,8 +40,8 @@ export default function Page() {
 </label>
           </form>
         </div>
-        <div className="flex flex-col align-middle m-32">
-            <Link className="btn btn-primary" href="/booking/booked">
+        <div className="flex flex-col align-middle m-32 w-1/4">
+            <Link className="btn btn-primary mt-4 bg-red-500 rounded-full hover:bg-red-700 border border-red-500 hover:border-red-700 text-white" href="/booking/booked">
                 Book Now
             </Link>
             

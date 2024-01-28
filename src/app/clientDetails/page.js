@@ -9,12 +9,16 @@ import { db } from "@/databse api/firebase";
 import img1 from "../../Assets/avatar.png";
 import Image from "next/image";
 import Link from "next/link";
+// import { UserAuth } from "../context/AuthContext";
 
 export default async function Page() {
 
   const usersRef = collection(db, "users");
   const q = query(usersRef, where("customer", "==", true));
   const querySnapshot = await getDocs(q);
+  // const {tester}= UserAuth();
+  // console.log(tester);
+  
   return (
     <div>
      
