@@ -8,6 +8,7 @@ import {
 import { db } from "@/databse api/firebase";
 import img1 from "../../Assets/avatar.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Page() {
 
@@ -25,7 +26,7 @@ export default async function Page() {
           <p>Job: {doc.data().job}</p>
           <p>Favorite Color: {doc.data().Email}</p>
           {/* ... other relevant data */}
-          
+          <Link href="/patientProfile">View Details</Link>
         </div>
       ))}
     </div>

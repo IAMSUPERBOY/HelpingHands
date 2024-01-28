@@ -4,10 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import img1 from "../Assets/home.png";
 import data from "../Assets/state.json";
+import { useState,useEffect } from "react";
 
 export default function Home() {
-  const [loggedIn,setLogin]=React.useState(data.state);
-  React.useEffect(()=>setLogin(loggedIn));
+  const [loggedIn,setLogin]=React.useState(false);
+  
   return (
     <>
     

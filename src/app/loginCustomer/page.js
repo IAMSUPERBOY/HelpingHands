@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import logo from "../../Assets/logo.svg";
 import data from "../../Assets/state.json";
+import AuthProvider from "../firebaseAuth";
 
 async function readFormData(formData)
 {
@@ -40,9 +41,6 @@ export default function Page() {
   
   return (
     <>
-      <div className="flex justify-center align-center mt-12">
-        <Image width={175} height={175} src={logo}/>
-      </div>
 
       <div className="font-bold text-center text-4xl mt-10">Create your Customer Account</div>
     

@@ -2,7 +2,9 @@ import { addDoc} from "firebase/firestore";
 import { Timestamp,collection } from "firebase/firestore";
 import { db } from "@/databse api/firebase";
 import { redirect } from "next/navigation";
+import { GoogleAuthProvider } from "firebase/auth";
 
+const provider = new GoogleAuthProvider();
 async function readFormData(formData)
 {
     "use server";
@@ -32,7 +34,8 @@ async function readFormData(formData)
       redirect("/");
 }
 export default function Page() {
-
+  
+const provider = new GoogleAuthProvider();
   return (
     <>
       <div className="font-bold text-center ">Customer Login</div>
