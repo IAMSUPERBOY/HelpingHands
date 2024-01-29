@@ -38,7 +38,7 @@ export default function Page() {
 const provider = new GoogleAuthProvider();
   return (
     <>
-      <div className="font-bold text-center ">Customer Login</div>
+      <div className="font-bold text-center ">Service Provider SignUp</div>
     
       <form className="flex flex-row m-10 justify-center" action={readFormData}>
         {/* -------------------------------- */}
