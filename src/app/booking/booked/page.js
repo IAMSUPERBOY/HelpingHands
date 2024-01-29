@@ -32,23 +32,13 @@ import {
     // console.log(tester);
     
     return (
-      <div>
+      <div className="flex flex-row">
         
-        <div className="text-center font-bold m-8">
+        <div className="text-center font-bold m-16 text-3xl">
              We've recieved your request and a nurse will be calling you shortly.
         </div>
-        <div className="text-center font-mono mt-2">
-
-        {querySnapshot.docs.map((doc) => (
-            <div key={doc.id}>
-            {/* Render content based on doc data here */}
-            <p>Name: {doc.data().name}</p>
-            <p>Job: {doc.data().job}</p>
-            <p>Email {doc.data().Email}</p>
-            {/* ... other relevant data */}
-            <Link href="/patientProfile">View Details</Link>
-          </div>
-        ))}
+        <div className="text-center font-mono m-20">
+          The Partner XYZ would be soon coming to your aid.
       </div>
         </div>
     );

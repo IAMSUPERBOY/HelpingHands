@@ -35,7 +35,7 @@ async function readFormData(formData)
       } catch (e) {
         console.error("Error adding document: ", e);
       }
-      redirect("/");
+      redirect("/BookNurse");
 }
 export default function Page() {
  

@@ -33,10 +33,10 @@ export default function RootLayout({ children }) {
                     <summary>Sign In</summary>
                     <ul className="p-2 w-15">
                       <li>
-                        <a href="/loginCustomer">Customer Login</a>
+                        <a href="/loginC">Customer Login</a>
                       </li>
                       <li>
-                        <a href="/loginProvider">Nurse Login</a>
+                        <a href="/loginP">Nurse Login</a>
                       </li>
                     </ul>
                   </details>
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
             <div className="navbar-end">
               {customer_page ? (
                 <Link href="/clientDetails" className="btn" onClick={Handler}>
-                  Switch to Service
+                  Switch to Provider
                 </Link>
               ) : (
                 <Link href="/" className="btn" onClick={Handler}>
