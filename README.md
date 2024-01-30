@@ -7,8 +7,8 @@ Catering to the unique needs of the elderly, Helping hands is designed with a us
 https://github.com/IAMSUPERBOY/HelpingHands/assets/117973059/5dcb5bfe-140e-4188-ae47-a9da59103e68
 
 ### Technologies Used: 
-- Next.js - **  FrontEnd ** 
-- Firebase and Firestore - ** Backend **
+- Next.js - **FrontEnd** 
+- Firebase and Firestore - **Backend**
    
 
 
